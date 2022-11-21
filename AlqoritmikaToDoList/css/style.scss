@@ -1,0 +1,146 @@
+$main-border-color : #C4C4C4;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+input,button{
+    outline: none;
+    border: 0px;
+}
+
+.error{
+    text-align: left;
+    color: red;
+}
+.remove,.send{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translate(-25px,-50%);
+    border: 1px solid $main-border-color;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    i{
+        color: $main-border-color;
+        transition: 0.3s;
+    }
+    &:hover{
+        background-color: #833AE0;
+        transition: 0.3s;
+        i{
+            color: white;
+            transition: 0.3s;
+        }
+    }
+}
+#todolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .todolist{
+        width: 336px;
+        border-radius: 10px;
+        border: 1px solid $main-border-color;
+        text-align: center;
+        .box{
+            .top{
+                .yellow{
+                    height: 28px;
+                    background-color: #FFDC40;
+                }
+                .header{
+                    font-family: 'Roboto';
+                    font-size: 26px;
+                    font-weight: 900;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+            .center{
+                
+                .hide-show{
+                    text-align: end;
+                    color: $main-border-color;
+                    i{
+                        margin: 0px 30px 10px 0;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover{
+                            color: #833AE0;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .input{
+                    position: relative;
+                    input{
+                        height: 40px;
+                        width: 286px;
+                        border-radius: 10px;
+                        border: 1px solid  $main-border-color;
+                        padding: 10px;
+                    }
+                    .remove{
+                        transform: translate(-50px,-50%);
+                    }
+                    .send{
+                        font-size: 13px;
+                        // transform: translate(-50px,-50%);
+                    }
+                }
+                    .list{
+                        list-style: none;
+                        width: 286px;
+                        margin: 0 auto;
+                        border: 1px solid $main-border-color;
+                        border-radius: 10px;
+                        .item{
+                            position: relative;
+                            padding: 5px;
+                            text-align: left;
+                            border: 0px;
+                        }
+                    }
+            }
+            .bottom{
+                height: 42px;
+                width: 150px;
+                border-radius: 71px;
+                background: #833AE0;
+                color: white;
+                margin: 0 auto;
+                position: relative;
+                cursor: pointer;
+                margin: 20px 0;
+                span{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    height: 42px;
+                    width: 42px;
+                    border-radius: 71px;
+                    line-height: 42px;
+                    background-color: #9953F1;
+                }
+                p{
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: center;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

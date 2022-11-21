@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="todolist">
+        <div class="todolist">
+            <div class="box">
+                <div class="top">
+                    <div class="yellow"></div>
+                    <h2 class="header">To-Do List</h2>
+                </div>
+                <div class="center">
+                    <div class="hide-show">
+                        <i class="fa-solid fa-arrow-down-short-wide close"></i>
+                    </div>
+                    <div  class="input">
+                        <input type="text">
+                        <div class="remove">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <p class="error"></p>
+                    <ul class="list">
+                        <li class="item">
+                            <span>salam</span>
+                            <div class="remove">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <span>salam</span>
+                            <div class="remove">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="bottom send">
+                    <span>+</span>
+                    <p>Добавить</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>

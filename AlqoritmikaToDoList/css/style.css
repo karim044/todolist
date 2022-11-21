@@ -1,0 +1,139 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+input, button {
+  outline: none;
+  border: 0px;
+}
+
+.error {
+  text-align: left;
+  color: red;
+}
+
+.remove, .send {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translate(-25px, -50%);
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.remove i, .send i {
+  color: #C4C4C4;
+  transition: 0.3s;
+}
+.remove:hover, .send:hover {
+  background-color: #833AE0;
+  transition: 0.3s;
+}
+.remove:hover i, .send:hover i {
+  color: white;
+  transition: 0.3s;
+}
+
+#todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#todolist .todolist {
+  width: 336px;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  text-align: center;
+}
+#todolist .todolist .box .top .yellow {
+  height: 28px;
+  background-color: #FFDC40;
+}
+#todolist .todolist .box .top .header {
+  font-family: "Roboto";
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 0;
+}
+#todolist .todolist .box .center .hide-show {
+  text-align: end;
+  color: #C4C4C4;
+}
+#todolist .todolist .box .center .hide-show i {
+  margin: 0px 30px 10px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#todolist .todolist .box .center .hide-show i:hover {
+  color: #833AE0;
+  transition: 0.3s;
+}
+#todolist .todolist .box .center .input {
+  position: relative;
+}
+#todolist .todolist .box .center .input input {
+  height: 40px;
+  width: 286px;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+  padding: 10px;
+}
+#todolist .todolist .box .center .input .remove {
+  transform: translate(-50px, -50%);
+}
+#todolist .todolist .box .center .input .send {
+  font-size: 13px;
+}
+#todolist .todolist .box .center .list {
+  list-style: none;
+  width: 286px;
+  margin: 0 auto;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+#todolist .todolist .box .center .list .item {
+  position: relative;
+  padding: 5px;
+  text-align: left;
+  border: 0px;
+}
+#todolist .todolist .box .bottom {
+  height: 42px;
+  width: 150px;
+  border-radius: 71px;
+  background: #833AE0;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  margin: 20px 0;
+}
+#todolist .todolist .box .bottom span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 42px;
+  width: 42px;
+  border-radius: 71px;
+  line-height: 42px;
+  background-color: #9953F1;
+}
+#todolist .todolist .box .bottom p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  padding-left: 20px;
+}/*# sourceMappingURL=style.css.map */
